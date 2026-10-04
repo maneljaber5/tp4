@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <form action="traitement.php" method="post">
+      <!-- Bloc 1 : Votre identité -->
+      <fieldset>
+        <legend>Votre identité</legend>
+        <table>
+          <tr>
+            <td>1. Nom</td>
+            <td>
+              <input type="text" name="nom" placeholder="Prénom et nom" />
+            </td>
+          </tr>
+          <tr>
+            <td>2. Email</td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                placeholder="exemple@domaine.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>3. Téléphone</td>
+            <td>
+              <input
+                type="tel"
+                name="telephone"
+                placeholder="par ex : +33755000000"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <!-- Bloc 2 : Adresse de livraison -->
+      <fieldset>
+        <legend>Adresse de livraison</legend>
+        <table>
+          <tr>
+            <td>1. Adresse</td>
+            <td>
+              <textarea name="adresse" rows="5" cols="20"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>2. Code postal</td>
+            <td>
+              <input type="text" name="code_postal" />
+            </td>
+          </tr>
+          <tr>
+            <td>3. Pays</td>
+            <td>
+              <input type="text" name="pays" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <!-- Bloc 3 : Informations CB -->
+      <fieldset>
+        <legend>Informations CB</legend>
+        <table>
+          <tr>
+            <td>1.</td>
+            <td>
+              <fieldset>
+                <legend>Type de carte bancaire</legend>
+                <ol>
+                  <li>
+                    <input type="radio" name="carte" value="visa" />
+                    VISA
+                  </li>
+                  <li>
+                    <input type="radio" name="carte" value="amex" />
+                    AmEx
+                  </li>
+                  <li>
+                    <input type="radio" name="carte" value="mastercard" />
+                    Mastercard
+                  </li>
+                </ol>
+              </fieldset>
+            </td>
+          </tr>
+          <tr>
+            <td>2. N° de carte</td>
+            <td>
+              <input type="text" name="numero_carte" />
+            </td>
+          </tr>
+          <tr>
+            <td>3. Code sécurité</td>
+            <td>
+              <input type="text" name="code_securite" />
+            </td>
+          </tr>
+          <tr>
+            <td>4. Nom du porteur</td>
+            <td>
+              <input
+                type="text"
+                name="nom_porteur"
+                placeholder="Même nom que sur la carte"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <input type="submit" value="J'achète !" />
+    </form>
+  </body>
+</html>
